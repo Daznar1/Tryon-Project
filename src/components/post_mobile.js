@@ -445,8 +445,7 @@ export default function Post_mobile() {
         const texto_post_mobile = document.getElementById('texto_post_mobile')
         const tags_section_mobile = document.getElementById('tags_post_mobile')
 
-        // console.log('valor do titulo: '+ titulo_post_mobile.value)
-        // console.log('valor do texto: '+ texto_post_mobile.value)
+
 
         if (tags_section_mobile.querySelectorAll('div').length === 8 && titulo_post_mobile.value.length > 1 && texto_post_mobile.value.length > 1) {
             set_state_btn_post('btn btn-primary w-100')

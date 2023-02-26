@@ -110,8 +110,7 @@ export default function Feed_game_filters(props) {
 
 
                     if (location.pathname === '/Tryon-Project/feed') {
-                        // console.log(post_info.game)
-                        // console.log(gameValue)
+  
                         if (gameValue != "") {
                             if (post_info.game === gameValue) {
                                 post_check_game = true

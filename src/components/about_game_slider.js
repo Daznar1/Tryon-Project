@@ -9,13 +9,16 @@ import data from "../IGDBdata.json"
 
 
 
-export default function About_game_slider() {
+export default function About_game_slider(props) {
 
-    const { id } = useParams();
+    const id = props.game
     const [img, setImg] = useState("");
     const [art, setArt] = useState("");
 
-    if (img == "") {
+    useEffect(() => {
+
+        setImg("")
+        setArt("")
 
         data.forEach(element => {
 
@@ -42,10 +45,8 @@ export default function About_game_slider() {
 
         });
 
-    }
 
-
-
+    }, [props.game])
 
 
 

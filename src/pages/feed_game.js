@@ -12,9 +12,10 @@ import { useParams } from "react-router-dom";
 
 function Feed_game() {
 const {id}=useParams();
+
     return (
         <main className="container-fluid">
-            <Game_header />
+            <Game_header game={id} />
             <section className="game_info_selection row d-none d-sm-flex">
             <Link className="col-6 text-center py-3 unselected text-decoration-none " style={{ clipPath: "polygon(0 0, 100% 0, 97% 100%, 0% 100%)"}} to={`/Tryon-Project/about_game/${id}`}><div>
                 <p>About the game</p>

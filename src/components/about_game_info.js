@@ -9,8 +9,8 @@ import nintendo_img from "../imgs/icones_plataformas/nintendo_icon.svg";
 import mobile_img from "../imgs/icones_plataformas/mobile_icon.svg";
 import data from "../IGDBdata.json";
 
-export default function About_game_info() {
-    const { id } = useParams();
+export default function About_game_info(props) {
+    const id = props.game
     const [rating, setRating] = useState("");
     const [gamemodes, setGamemodes] = useState([]);
     const [perspective, setPerspective] = useState("");
@@ -31,7 +31,28 @@ export default function About_game_info() {
 
     
 
-    if (gamemodes == "") {
+    useEffect(() => {
+
+
+
+
+        setRating("")
+        setGamemodes([]);
+        setPerspective("")
+        setThemes("")
+        setKeywords("")
+        setKeywords1("")
+        setKeywords2("")
+        setTwitter("")
+        setFacebook("")
+        setInstagram("")
+        setYoutube("")
+        setWebiste("")
+        setRelease("")
+        setPlatforms("")
+        setGenre([])
+        setSimilar([])
+        setGenreCheck(false)
 
         data.forEach(element => {
 
@@ -40,7 +61,7 @@ export default function About_game_info() {
                 case element.name:
                     setRating(element.total_rating)
 
-                 
+
 
                     let allDates = []
                     element.release_dates.map(date =>
@@ -48,10 +69,10 @@ export default function About_game_info() {
                     )
 
                     element.release_dates.map(date => {
-                        if(date.date === Math.min(...allDates)){
+                        if (date.date === Math.min(...allDates)) {
                             setRelease(date.human)
                         }
-                    })                        
+                    })
 
                     if (element.player_perspectives == undefined) {
                         setPerspective("No information to display.")
@@ -88,10 +109,10 @@ export default function About_game_info() {
                         element.game_modes.forEach(gm => setGamemodes(oldArray => [...oldArray, <div key={gm.id}>{gm.name}</div>]));
                     }
 
-                  
+
 
                     element.websites.map(website => {
-                        
+
 
                         switch (website.category) {
                             case 1:
@@ -112,11 +133,11 @@ export default function About_game_info() {
                         }
                     })
 
-                    
-                   
-                    
 
-                  
+
+
+
+
 
                     if (element.genres == undefined) {
                         setGenre("no info");
@@ -127,7 +148,7 @@ export default function About_game_info() {
                     }
 
 
-                
+
 
                     let playstation_check = false;
                     let pc_check = false;
@@ -190,9 +211,11 @@ export default function About_game_info() {
         })
 
 
-    }
 
-  
+    }, [props.game])
+
+
+
 
 
     useEffect(() => {
@@ -205,7 +228,7 @@ export default function About_game_info() {
 
                 setGenreCheck(false);
 
-                
+
 
                 jogo.genres.forEach(genero_jogo_lista => {
 
@@ -213,7 +236,7 @@ export default function About_game_info() {
                         if (genero_jogo_pag.name == genero_jogo_lista.name && genreCheck === false && arrayJogos.length < 6) {
                             setGenreCheck(true);
 
-                            let linkJogo = <Link to={`/Tryon-Project/about_game/${jogo.name}`} style={{width: "fit-content"}} className="text-center text-white text-decoration-none nome_jogo_games" key={jogo.id}><li style={{width: "fit-content"}}><img className="img-fluid" src={jogo.cover.url.replace("t_thumb", "t_cover_big")} alt="jogo" /><p>{jogo.name}</p></li></Link>
+                            let linkJogo = <Link to={`/Tryon-Project/about_game/${jogo.name}`} onClick={props.handleClick} style={{ width: "fit-content" }} className="text-center text-white text-decoration-none nome_jogo_games" key={jogo.id}><li style={{ width: "fit-content" }}><img className="img-fluid" src={jogo.cover.url.replace("t_thumb", "t_cover_big")} alt="jogo" /><p>{jogo.name}</p></li></Link>
 
                             let jogoIncluido = false
 
@@ -240,6 +263,7 @@ export default function About_game_info() {
 
         setSimilar(arrayJogos)
 
+        
     }, [genre])
 
 
@@ -325,7 +349,7 @@ export default function About_game_info() {
                                         <i className="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
                                     </a>
                                 </li> : ""}
-                                
+
                                 {facebook != "" ? <li>
                                     <a href={facebook} target="_blank" className="fa-stack">
                                         <i className="fa-solid fa-circle fa-stack-2x"></i>
@@ -333,30 +357,30 @@ export default function About_game_info() {
                                     </a>
                                 </li> : ""}
 
-                                {instagram != "" ?  <li>
+                                {instagram != "" ? <li>
                                     <a href={instagram} target="_blank" className="fa-stack">
                                         <i className="fa-solid fa-circle fa-stack-2x"></i>
                                         <i className="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
                                     </a>
-                                </li> : "" }
+                                </li> : ""}
 
 
-                                {youtube != "" ?  <li>
+                                {youtube != "" ? <li>
                                     <a href={youtube} target="_blank" className="fa-stack">
                                         <i className="fa-solid fa-circle fa-stack-2x"></i>
                                         <i className="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
                                     </a>
-                                </li> : "" }
-                               
+                                </li> : ""}
 
-                                {website != "" ?  <li>
+
+                                {website != "" ? <li>
                                     <a href={website} target="_blank" className="fa-stack">
                                         <i className="fa-solid fa-circle fa-stack-2x"></i>
                                         <i className="fa-solid fa-globe fa-stack-1x fa-inverse"></i>
                                     </a>
                                 </li> : ""}
-                               
-                            
+
+
                             </ul>
                         </article>
 

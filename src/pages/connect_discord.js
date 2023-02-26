@@ -48,8 +48,7 @@ export default function Discord() {
 
     useEffect(() => {
 
-        console.log(code)
-
+    
         if (code != null) {
 
             const params = new URLSearchParams({
