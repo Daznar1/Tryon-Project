@@ -9,6 +9,7 @@ import {
   Link,
   Navigate
 } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 
 import { Component } from 'react';
 
