@@ -215,7 +215,7 @@ export default function About_game_info() {
                         if (genero_jogo_pag.name == genero_jogo_lista.name && genreCheck === false && arrayJogos.length < 6) {
                             setGenreCheck(true);
 
-                            let linkJogo = <Link to={`/Tryon-Project/about_game/${jogo.name}`} style={{width: "fit-content"}} className="text-center text-white text-decoration-none nome_jogo_games" key={jogo.id} onClick={refreshPage}><li style={{width: "fit-content"}}><img className="img-fluid" src={jogo.cover.url.replace("t_thumb", "t_cover_big")} alt="jogo" /><p>{jogo.name}</p></li></Link>
+                            let linkJogo = <Link to='/Tryon-Project/feed' style={{width: "fit-content"}} className="text-center text-white text-decoration-none nome_jogo_games" key={jogo.id} onClick={refreshPage}><li style={{width: "fit-content"}}><img className="img-fluid" src={jogo.cover.url.replace("t_thumb", "t_cover_big")} alt="jogo" /><p>{jogo.name}</p></li></Link>
 
                             let jogoIncluido = false
 
