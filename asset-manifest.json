@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Tryon-Project/static/css/main.16039f4e.css",
+    "main.js": "/Tryon-Project/static/js/main.7aca0e62.js",
+    "static/js/787.35dc4fb6.chunk.js": "/Tryon-Project/static/js/787.35dc4fb6.chunk.js",
+    "static/media/fundo_games.png": "/Tryon-Project/static/media/fundo_games.172937c683720d48f507.png",
+    "static/media/header_1.png": "/Tryon-Project/static/media/header_1.f13a2820db7a278005d2.png",
+    "static/media/goto_feed2_photo.png": "/Tryon-Project/static/media/goto_feed2_photo.ac027b8eb3a9a69c7932.png",
+    "static/media/footer_imagem_1.png": "/Tryon-Project/static/media/footer_imagem_1.9addb7feed8e5eb73da9.png",
+    "static/media/hero_img.jpg": "/Tryon-Project/static/media/hero_img.f35b5953f8da17cb96ba.jpg",
+    "static/media/footer_imagem_2.png": "/Tryon-Project/static/media/footer_imagem_2.97331dc8a0661724c388.png",
+    "static/media/slide_1_sm.jpg": "/Tryon-Project/static/media/slide_1_sm.4b1d925dcbb9cf102695.jpg",
+    "static/media/slide_1.jpg": "/Tryon-Project/static/media/slide_1.75131d92caa6d276c6ae.jpg",
+    "static/media/slide_2.jpg": "/Tryon-Project/static/media/slide_2.96bb32fa032febfe3908.jpg",
+    "static/media/slide_2_sm.jpg": "/Tryon-Project/static/media/slide_2_sm.07747bac9d0cdd65d6c1.jpg",
+    "static/media/slide_3.jpg": "/Tryon-Project/static/media/slide_3.0b72a0df7956a18e6e3c.jpg",
+    "static/media/slide_3_sm.jpg": "/Tryon-Project/static/media/slide_3_sm.629cb3b6b2998f7cefe6.jpg",
+    "static/media/discord_hero.jpg": "/Tryon-Project/static/media/discord_hero.a06309f2a67d9a880316.jpg",
+    "static/media/logo_branco.png": "/Tryon-Project/static/media/logo_branco.f3112f0f2bae769a0cdb.png",
+    "static/media/games_background.png": "/Tryon-Project/static/media/games_background.d4d0aa8835edded7402a.png",
+    "static/media/bg.jpg": "/Tryon-Project/static/media/bg.5c4536b54aee4023c4b8.jpg",
+    "static/media/loading-svg1.svg": "/Tryon-Project/static/media/loading-svg1.96e0c7cf3f7f61c924e3cfa536724abc.svg",
+    "static/media/playstation_icon.svg": "/Tryon-Project/static/media/playstation_icon.720d4e4702b697efd73cb381348ec85e.svg",
+    "static/media/xbox_icon.svg": "/Tryon-Project/static/media/xbox_icon.e8deb6053cb83b0ec0d0192ef6f332d9.svg",
+    "static/media/nintendo_icon.svg": "/Tryon-Project/static/media/nintendo_icon.b28b9763fc53921394cd0a0d74eff941.svg",
+    "index.html": "/Tryon-Project/index.html",
+    "static/media/pc_icon.svg": "/Tryon-Project/static/media/pc_icon.1e10e27e39c0021e32153be3a15752e8.svg",
+    "static/media/loading-img.svg": "/Tryon-Project/static/media/loading-img.10f39720e967ee1dd882ed41d9f9882b.svg",
+    "static/media/mobile_icon.svg": "/Tryon-Project/static/media/mobile_icon.f70aafec25ff9cabf74569a9347270ab.svg",
+    "static/media/calendar.svg": "/Tryon-Project/static/media/calendar.47b1b0596167cff4bfbb.svg",
+    "static/media/pencil.svg": "/Tryon-Project/static/media/pencil.68b460630071732ab5af.svg",
+    "static/media/arrow.svg": "/Tryon-Project/static/media/arrow.de1172f020aeaa17da9e.svg",
+    "main.16039f4e.css.map": "/Tryon-Project/static/css/main.16039f4e.css.map",
+    "main.7aca0e62.js.map": "/Tryon-Project/static/js/main.7aca0e62.js.map",
+    "787.35dc4fb6.chunk.js.map": "/Tryon-Project/static/js/787.35dc4fb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16039f4e.css",
+    "static/js/main.7aca0e62.js"
+  ]
+}
