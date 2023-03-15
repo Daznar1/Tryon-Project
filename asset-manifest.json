@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tryon-Project/static/css/main.16039f4e.css",
-    "main.js": "/Tryon-Project/static/js/main.7aca0e62.js",
+    "main.js": "/Tryon-Project/static/js/main.4511289e.js",
     "static/js/787.35dc4fb6.chunk.js": "/Tryon-Project/static/js/787.35dc4fb6.chunk.js",
     "static/media/fundo_games.png": "/Tryon-Project/static/media/fundo_games.172937c683720d48f507.png",
     "static/media/header_1.png": "/Tryon-Project/static/media/header_1.f13a2820db7a278005d2.png",
@@ -31,11 +31,11 @@
     "static/media/pencil.svg": "/Tryon-Project/static/media/pencil.68b460630071732ab5af.svg",
     "static/media/arrow.svg": "/Tryon-Project/static/media/arrow.de1172f020aeaa17da9e.svg",
     "main.16039f4e.css.map": "/Tryon-Project/static/css/main.16039f4e.css.map",
-    "main.7aca0e62.js.map": "/Tryon-Project/static/js/main.7aca0e62.js.map",
+    "main.4511289e.js.map": "/Tryon-Project/static/js/main.4511289e.js.map",
     "787.35dc4fb6.chunk.js.map": "/Tryon-Project/static/js/787.35dc4fb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16039f4e.css",
-    "static/js/main.7aca0e62.js"
+    "static/js/main.4511289e.js"
   ]
 }
