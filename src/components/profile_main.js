@@ -156,13 +156,6 @@ export default function Profile_main(props) {
         profileTop = <section data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400"  className="row text-center mx-auto">
             <div className="position-relative mx-auto w-auto" style={{ marginTop: '12em' }}>
                 {image}
-                <a href="#" className="btn_edit_user_profile">
-                    <div className="mx-auto">
-                        <div style={{ marginTop: '0.85rem' }}><i className="fa-solid fa-pen "></i>
-                        </div>
-                    </div>
-                </a>
-
             </div>
             <div className="mt-4">
                 <h3>{props.username}{language}</h3>
